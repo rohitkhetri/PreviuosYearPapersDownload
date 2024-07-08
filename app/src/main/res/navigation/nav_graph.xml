@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.previuosyearpapers.Fragment.Login_Fragment"
+        tools:layout="@layout/fragment_login_" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.previouspapers.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_uploadFragment"
+            app:destination="@id/uploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.example.previouspapers.ui.upload.UploadFragment"
+        tools:layout="@layout/fragment_upload" />
+</navigation>
