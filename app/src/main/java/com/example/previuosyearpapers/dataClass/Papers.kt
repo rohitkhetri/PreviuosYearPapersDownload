@@ -1,4 +1,4 @@
-package com.example.previuosyearpapers
+package com.example.previuosyearpapers.dataClass
 
 data class Papers(
     val subject : String = "",

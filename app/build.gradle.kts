@@ -79,7 +79,7 @@ dependencies {
     implementation("com.facebook.shimmer:shimmer:0.5.0")
 
 
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
 
 
 }

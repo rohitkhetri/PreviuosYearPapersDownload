@@ -1,10 +1,11 @@
-package com.example.previuosyearpapers
+package com.example.previuosyearpapers.Mainactivity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.previuosyearpapers.Fragment.Home_Fragment
 import com.example.previuosyearpapers.Fragment.Upload_Fragment
+import com.example.previuosyearpapers.R
 import com.example.previuosyearpapers.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -40,9 +41,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadFragment(fragment: Fragment) {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.fragment_container, fragment)
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment)
             .commit()
     }
 }
